@@ -18,3 +18,4 @@ if __name__ == '__main__':
     print(list(map(round, my_floats, repeat(2))))
 
     print([round(x, 2) for x in my_floats])
+    print(list(map(lambda x: round(x, 2), my_floats)))

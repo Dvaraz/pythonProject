@@ -4,6 +4,9 @@ def get_distance(point):
     return (x ** 2 + y ** 2) ** 0.5
 
 
+a = lambda point: (point[0] ** 2 + point[1] ** 2) ** 0.5
+
+
 if __name__ == '__main__':
     pts = [
         (4.5, 3),
@@ -15,3 +18,4 @@ if __name__ == '__main__':
     print(f"Max point {max(map(get_distance, pts))}")
 
     print(max([((x ** 2 + y ** 2) ** 0.5) for x, y in pts]))
+    print(max(map(lambda point: (point[0] ** 2 + point[1] ** 2) ** 0.5, pts)))

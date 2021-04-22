@@ -20,3 +20,8 @@ if __name__ == '__main__':
         print(_)
     for _ in map(test_n, int_1, int_2, int_3):
         print(_)
+
+    print("-" * 20)
+
+    for i in map(lambda *args: tuple(args), string_1, string_2, string_3):
+        print(i)

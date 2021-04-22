@@ -10,5 +10,5 @@ if __name__ == '__main__':
     ]
 
     print(tuple(map(int, num_list)))
-
+    print(list(map(lambda x: int(x), num_list)))
     print([int(x) for x in num_list])

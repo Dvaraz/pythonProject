@@ -7,3 +7,5 @@ if __name__ == '__main__':
     print(list(map(sum, zip(list_1, list_2))))
 
     print(list(map(add, list_1, list_2)))
+
+    print(list(map(lambda x, y: x + y, list_1, list_2)))

@@ -16,3 +16,8 @@ if __name__ == '__main__':
 
     for i in a:
         print(i)
+
+    print("-" * 20)
+
+    for i in map(lambda x: str.upper(x), list_words):
+        print(i)

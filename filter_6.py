@@ -1,10 +1,10 @@
 def find_expressions(a):
     return (x for x in str(a).split("\n") if x.endswith(".ico") or x.endswith(".png"))
 
-def generator_(x):
-    for x in str(x).split("\n"):
-        if x.endswith(".ico") or x.endswith(".png"):
-            yield x
+def generator_(text):
+    for line in str(text).split("\n"):
+        if line.endswith(".ico") or line.endswith(".png"):
+            yield line.split(" ")[-1]
 
 
 if __name__ == '__main__':
