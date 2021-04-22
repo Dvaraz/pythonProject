@@ -11,3 +11,8 @@ if __name__ == '__main__':
 
     for word in map(str.upper, list_words):
         print(word)
+
+    a = [x.upper() for x in list_words]
+
+    for i in a:
+        print(i)
