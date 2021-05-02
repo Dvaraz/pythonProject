@@ -14,7 +14,12 @@ def pairwise(iterable):
 
 
 a = pairwise(pts)
+# for _ in a:
+#     print(_)
 b = ((j[0] - j[1], k[0] - k[1]) for j, k in a)
+for _ in b:
+    print(_)
+
 
 
 print(sum(map(lambda point: (point[0] ** 2 + point[1] ** 2) ** 0.5, b)))

@@ -16,7 +16,7 @@ def make_string_upper(fn):
 
 def make_string_upper_2(fn):
     def wrapper(*args):
-        args = str(args).upper()
+        args = str(args[0]).upper()
         result = fn(args)
         ...
         return result
