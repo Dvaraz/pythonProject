@@ -13,7 +13,7 @@ def is_iter_dec(fn):
 
 @is_iter_dec
 def test(x, y):
-    print(x, y)
+    return x, y
 
 print(test(k="123"))
 

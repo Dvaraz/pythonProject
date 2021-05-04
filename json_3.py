@@ -20,4 +20,4 @@ if __name__ == '__main__':
         "d": {1: 5},
     }
     to_json_file(dict_json, "json_indent_4", 4)
-    to_json_file_oneline(dict_json, "json_oneline")
+    # to_json_file_oneline(dict_json, "json_oneline")
