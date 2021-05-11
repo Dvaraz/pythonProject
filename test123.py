@@ -31,3 +31,5 @@ for _ in range(5):
 
 # with open("p1_test.geojson", "w") as f:
 #     f.write(geojson.dumps(p1))
+
+print(p1.inter)
