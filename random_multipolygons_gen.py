@@ -144,12 +144,6 @@ def graham_scan(points, show_progress=False):
     return hull
 
 
-def polygon_intersection(list_of_polygons, polygon):
-    for i in list_of_polygons:
-        if Polygon(i).intersects(Polygon(polygon)):
-            return False
-
-
 
 def polygon_generator(number): # generate polygons
     for i in range(number):
