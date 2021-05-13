@@ -150,7 +150,6 @@ def polygon_intersection(list_of_polygons, polygon):
             return False
 
 
-
 def polygon_generator(number): # generate polygons
     for i in range(number):
         a, b, c, d = random_point()
@@ -163,5 +162,6 @@ def create_multipolygon(num_of_polygons):
     multi = geojson.MultiPolygon([x for x in polygon_generator(num_of_polygons)]) # create multipolygon (number of polygons you want)
     with open(input("file_name: ") + ".geojson", "w") as f:
         f.write(geojson.dumps(multi))
+
 
 # create_multipolygon(10)
